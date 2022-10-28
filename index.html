@@ -81,10 +81,25 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js">
 
-      const shareBtn = document.getElementById('shareBtn')
-shareBtn.addEventListener('click', event =&gt; {
-  // Check for Web Share api support  if (navigator.share) {    // Browser supports native share api    navigator.share({      text: 'Please read this great article: ',      url: 'https://www.google.com/'    }).then(() =&gt; {      console.log('Thanks for sharing!');    })      .catch((err) =&gt; console.error(err));  } else {    // Fallback    alert("The current browser does not support the share function. Please, manually share the link")  }});
+const shareBtn = document.getElementById('shareBtn')
 
+shareBtn.addEventListener('click', event => {
+
+  // Check for Web Share api support
+  if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      text: 'Please read this great article: ',
+      url: 'https://www.google.com/'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+});
     </script>
 </body>
 
