@@ -13,7 +13,7 @@
 <body >
     <div class="share">
         <i class="fas fa-share-alt"></i>
-        <button id="sharee" >123</button>
+        <button id="shareBtn" >123</button>
     </div>
     <div class="container" style="margin-top: 20px;">
         <div class="col">
@@ -81,25 +81,9 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js">
 
-        const sharee= document.getElementById('sharee');
-        
-        sharee.addEventListener('click', event =>{
-        
-            if(navigarot.share){
-        
-                navigarot.share({
-               
-                    text:'Ушул ссылка',
-                    url:'https://wwww.google.com/'
-            
-                }).then(()=>{
-            console.log('Спасибо');
-            })
-            .catch(console.error);
-            }else{
-                alert(123)
-            }
-        })
+      const shareBtn = document.getElementById('shareBtn')
+shareBtn.addEventListener('click', event =&gt; {
+  // Check for Web Share api support  if (navigator.share) {    // Browser supports native share api    navigator.share({      text: 'Please read this great article: ',      url: 'https://www.google.com/'    }).then(() =&gt; {      console.log('Thanks for sharing!');    })      .catch((err) =&gt; console.error(err));  } else {    // Fallback    alert("The current browser does not support the share function. Please, manually share the link")  }});
 
     </script>
 </body>
