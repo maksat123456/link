@@ -1,0 +1,84 @@
+body{
+ margin: 0;
+padding: 0;
+background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+}
+i{
+  color: #00753C;
+  
+}
+
+.whatsapp:hover {
+  color: green!important;
+}
+
+.telegram:hover {
+  color: var(--bs-blue)!important;
+}
+
+.phone:hover {
+  color: var(--bs-gray)!important;
+}
+.dropdown .btn-light:hover {
+  color: var(--bs-gray)!important;
+}
+.dropdown{
+  margin-bottom: 20px;
+
+}
+.dropdown .btn-light{
+  width: 100%;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--bs-gray-dark);
+  text-align: left;
+  border-radius: 10px;
+}
+.dropdown-toggle::after{
+  float: right;
+  margin-top: 20px;
+}
+.dropdown .btn-light .fa-qrcode{
+  margin-right: 10px;
+}
+.dropdown-menu{
+  width: 100%;
+  text-align: center;
+  }
+  .dropdown-menu img{
+ max-width: 300px;
+  }
+  
+  .col h1,.col p {
+    color: var(--bs-light);
+  }
+.savee{
+  font-size: 35px;font-weight: bold;
+}
+
+  @media (max-width: 600px) {
+    .phone .phoneDiv .savee{
+          
+      font-size: 25px;
+      margin-top: -5px;
+    }
+    .share{
+      width: 100%;
+      height: 30px;
+      background-color: rgb(93, 94, 95);
+     
+    }
+    .share button{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      float: right;
+      margin-right: 20px;
+    }
+    .share button i{
+      color: 25px;
+      color: var(--bs-light);
+    }
+    
+ 
+  }

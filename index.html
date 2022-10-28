@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body >
+    <div class="share">
+        <button id="sharee"><i class="fas fa-share-alt"></i></button>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="col">
+            <div class="text-center"><img src="assets/img/Резервная_копия_Конверт%202019.png" style="width: 100px;border-radius: 50%;height: 100px;background-size: cover;"></div>
+        </div>
+        <div class="col">
+            <h1 class="text-center"><strong>Максат</strong></h1>
+            <p class="text-center"><strong>Компьютерные услуги&nbsp;* Фото студия&nbsp;* Полиграфия</strong>&nbsp;</p>
+
+
+            <div class="itemss">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-qrcode"></i><span style="font-size: 35px;font-weight: bold;">QR код</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        
+                        <img src="assets/img/qr код nfc.png" alt="qr код ">
+    
+                    </ul>
+                  </div>
+                <a class="whatsapp" href=" https://wa.me/996557212179?text=Салам" target="_blank" style="text-decoration: none;color: var(--bs-gray-dark);">
+                    <div style="border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background: #ffffff;">
+                        <span style="margin-left: 13px;">
+                            <i class="fab fa-whatsapp-square" style="font-size: 38px;margin-right: 18px;"></i></span>
+                        <span style="font-size: 40px;font-weight: bold;">WhatsApp</span>
+                    </div>
+                </a>
+                
+                
+                <a class="telegram" href="https://t.me/taatan_osh" target="_blank" style="text-decoration: none;color: var(--bs-gray-dark);margin: 3px;">
+                    <div style="border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background: #ffffff;">
+                        <span style="margin-left: 13px;">
+                            <i class="fab fa-telegram" style="font-size: 38px;margin-right: 18px;"></i></span>
+                            <span style="font-size: 40px;font-weight: bold;">Telegram</span>
+                        </div>
+                </a>
+                
+                <a class="phone" href="tel:0557212179" target="_blank" style="text-decoration: none;color: var(--bs-gray-dark);margin: 3px;">
+                    <div style="border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background: #ffffff;">
+                        <span style="margin-left: 13px;">
+                            <i class="fas fa-phone-alt" style="font-size: 38px;margin-right: 18px;"></i></span>
+                            <span style="font-size: 35px;font-weight: bold;">0557 21 21 79</span>
+                        </div>
+                </a>
+                
+                <a class="phone" href="tel:0708212179" target="_blank" style="text-decoration: none;color: var(--bs-gray-dark);margin: 3px;">
+                    <div style="border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background: #ffffff;">
+                        <span style="margin-left: 13px;">
+                            <i class="fas fa-phone-alt" style="font-size: 38px;margin-right: 18px;"></i></span>
+                            <span style="font-size: 35px;font-weight: bold;">0708 21 21 79</span>
+                        </div>
+                </a>
+                <a class="phone" href="assets/maksat.vcf" target="_blank" style="text-decoration: none;color: var(--bs-gray-dark);margin: 3px;">
+                    <div  class="phoneDiv" style="border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background: #ffffff;">
+                        <span style="margin-left: 13px;">
+                            <i class="fas fa-address-card" style="font-size: 38px;margin-right: 18px;"></i></span>
+                            <span class="savee" >Сохранить контакт</span>
+                        </div>
+                </a>
+            </div>
+         
+        
+            </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js">
+
+        const sharee= document.getElementById('sharee');
+        
+        sharee.addEventListener('click', event =>{
+        
+            if(navigarot.share){
+        
+                navigarot.share({
+               
+                    text:'Ушул ссылка',
+                    url:'https://wwww.google.com/'
+            
+                }).then(()=>{
+            console.log('Спасибо');
+            })
+            .catch(console.error);
+            }else{
+                alert(123)
+            }
+        })
+
+    </script>
+</body>
+
+</html>
